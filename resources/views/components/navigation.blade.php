@@ -23,7 +23,7 @@
               <a href="{{route('home')}}" class="-m-2 block p-2 font-medium text-gray-900">Accueil</a>
             </div>
             <div class="flow-root">
-              <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Produits</a>
+              <a href="{{route('products.index')}}" class="-m-2 block p-2 font-medium text-gray-900">Produits</a>
             </div>
             <div class="flow-root">
               <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Catégories</a>
@@ -83,9 +83,9 @@
             <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                  <a href="{{route('home')}}" class="text-sm font-medium text-gray-700 hover:text-gray-800">Accueil</a>
               <span aria-hidden="true" class="h-6 w-px bg-gray-200"></span>
-               <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Produits</a>
+               <a href="{{route('products.index')}}" class="text-sm font-medium text-gray-700 hover:text-gray-800">Produits</a>
               <span aria-hidden="true" class="h-6 w-px bg-gray-200"></span>
-               <a href="" class="text-sm font-medium text-gray-700 hover:text-gray-800">Catégories</a>
+               <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Catégories</a>
 
 
               <span aria-hidden="true" class="h-6 w-px bg-gray-200"></span>
@@ -105,7 +105,7 @@
 
             <!-- Cart -->
             <div class="ml-4 flow-root lg:ml-6">
-              <a href="#" class="group -m-2 flex items-center p-2">
+              <a href="{{route('cart.index')}}" class="group -m-2 flex items-center p-2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
                   <path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
