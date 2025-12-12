@@ -14,15 +14,16 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
+    
     <body>
 
     <main id="content">
 
     <x-navigation />
+    
     <div>
-@yield("content")
+    @yield("content")
     </div>
-
     
     </main>
       

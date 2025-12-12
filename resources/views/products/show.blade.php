@@ -18,6 +18,8 @@
             </svg>
           </div>
         </li>
+
+
         <li>
           <div class="flex items-center">
             <a href="#" class="mr-2 text-sm font-medium text-gray-900">{{$product->category->name}} </a>
@@ -27,9 +29,12 @@
           </div>
         </li>
 
+
         <li class="text-sm">
           <a href="{{route('products.show',$product)}}" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">{{$product->name}}</a>
         </li>
+
+
       </ol>
     </nav>
 
@@ -62,7 +67,7 @@
             @csrf
           
           <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Ajouter au panier</button>
-        </form>
+          </form>
       </div>
 
       <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pt-6 lg:pr-8 lg:pb-16">
@@ -97,6 +102,7 @@
     <h2 class="text-2xl font-bold tracking-tight text-gray-900">Produits similaires</h2>
 
     <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+      
         @foreach ($relatedProducts as $relatedProduct )
               <x-card-product :product="$relatedProduct" />
         @endforeach
